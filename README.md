@@ -2,7 +2,7 @@
 
 Welcome to my personal website! I'm Edda Fleisher, a passionate Front-End Developer based in Bristol, UK. This project showcases my skills and portfolio. Feel free to explore the different sections and get in touch if you have any questions or collaboration opportunities.
 
-## Table of Contents
+# Table of Contents
 Introduction
 Sections
 About Me
