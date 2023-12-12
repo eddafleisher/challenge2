@@ -7,10 +7,11 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: #f8f8f8;
+  background: linear-gradient(to bottom, rgb(164, 250, 255), rgb(114, 114, 251));
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 
 header {
@@ -45,13 +46,17 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   color: #fff;
   margin-right: 30px;
+  border-bottom: 2px solid white; /* Add a transparent underline */
 }
+
+
 
 nav a:hover {
   text-decoration: underline #0008ec;
+ 
 }
 
 .main-content {
@@ -72,6 +77,9 @@ nav a:hover {
 }
 .page-section .page-content h2 {
   font-size: 4em;
+}
+.page-section h2 {
+  font-size: 2.5em;
 }
 
 .hero-banner {
@@ -126,27 +134,44 @@ nav a:hover {
   margin-left: 20%;
 }
 
+.page-section#about .page-content {
+  margin-right: 0%;
+ margin-left: 10%;
+}
+
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 20px; 
 }
+
+
 
 .work-item {
   position: relative;
   overflow: hidden;
   flex: 1 1 calc(33.3333% - 20px);
-  margin: 5px;
+  margin: 10px;
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  border: 2px solid #0008ec;
+  border: 2px solid #ffffff;
 }
 
+
+
 .work-item img {
+  display: block; /* Add this line */
+  margin: 0; /* Remove any default margin */
   width: 100%;
-  max-height: 200px;
+  max-height: 200px; /* Adjust the max-height as needed */
+  border: 0px solid #001a8e; /* Change the border color to blue */
 }
+
+
+
+
 
 .work-item .text-box {
   background-color: #0008ec;
@@ -155,7 +180,8 @@ nav a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 35%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,6 +198,8 @@ nav a:hover {
   font-size: 1.2em;
 }
 
+
+
 .work-item .text-box p:last-child {
   font-size: 0.8em;
 }
@@ -183,7 +211,7 @@ nav a:hover {
 .work-item.surf-report img {
   width: 100%;
   max-height: 300px;
-  border: 2px solid #0008ec;
+  border: 0px solid #0008ec;
 }
 
 .work-item.led-wall,
@@ -191,7 +219,7 @@ nav a:hover {
 .work-item.pastel-puzzles,
 .work-item.run-buddy {
   flex: 1 1 calc(50% - 20px);
-  border: 1px solid #0008ec;
+  border: 1px solid #ffffff;
 }
 
 .work-item.led-wall img,
@@ -202,8 +230,9 @@ nav a:hover {
 }
 
 .work-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
+
 
 @media screen and (max-width: 768px) {
   .work-item {
@@ -221,15 +250,20 @@ nav a:hover {
   list-style-type: none;
   padding: 0%;
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
   padding-right: 0%;
-  margin-left: 0%;
+  margin-left: -10%;
+  margin-top: 10%;
+  margin-right: 0%;
+  margin-bottom: -20%;
 }
 
 .contact-links li {
   margin-right: 30px;
 }
+
+
 
 .contact-links a {
   text-decoration: none;
