@@ -31,7 +31,7 @@ Copy code
 git clone https://github.com/eddafleisher/challenge2.git
 Open the index.html file in your web browser to explore the website.
 
-This is also the address of my website: http://127.0.0.1:5501/index.html
+This is also the address of my website: http://127.0.0.1:5500/starter/challenge2/index.html
 
 
 ## License
